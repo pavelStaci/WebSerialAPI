@@ -3,8 +3,8 @@
 Flashing AVR(STK500 Protocol) by Web Serial API
 
 
-This repository contains an Arduino Flasher-Web-Page for uploading your Arduino sketches throught the cromium Serial API. 
-The soft used Hardware part, CP210x USB to UART Bridge Virtual convertor that providing virtual COM connection
+This repository contains an Arduino Flasher-Web-Page for uploading your Arduino sketches throught the Cromium Serial API. 
+The soft used Hardware part, CP210x USB to UART Bridge Virtual convertor that providing virtual COM connection.
 Before uploading your sketches, the files must been compiled in (*.hex) format.
 
 
