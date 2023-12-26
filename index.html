@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Flashing AVR microcontrollers by Web Serial API</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+
+<body>
+
+<div>
+  <h2><img src="cp2102.jpg" alt="CP2102">Flashing AVR(STK500 Protocol) by Web Serial API</h2>
+</div>
+
+<div id="info">
+  <p>
+    <div class="ctrl">
+      <i>Copy-paste your (*.hex) Sketch or&nbsp;&nbsp;</i>
+      <input type="file" id="my_HexFile" accept=".hex"><br><br>
+      <textarea id="textarea_HexFile"></textarea>
+    </div>
+    <div class="ctrl">
+      <i>Upload the Sketch and view Log&nbsp;&nbsp;</i>
+      <button onclick id="reqDev">Request device</button><br><br>
+      <textarea id="textarea_Log" disabled></textarea>
+   </div>
+  </p>
+</div>
+
+<div>
+  <p>
+   <span style="background-color:#FFFFCC">&nbsp;&nbsp;&nbsp;&nbsp;</span><i>&nbsp;Start code&nbsp;&nbsp;</i>
+   <span style="background-color:#CCFFCC">&nbsp;&nbsp;&nbsp;&nbsp;</span><i>&nbsp;Byte count&nbsp;&nbsp;</i>
+   <span style="background-color:#CCCCFF">&nbsp;&nbsp;&nbsp;&nbsp;</span><i>&nbsp;Address&nbsp;&nbsp;</i>
+   <span style="background-color:#FFCCCC">&nbsp;&nbsp;&nbsp;&nbsp;</span><i>&nbsp;Record type&nbsp;&nbsp;</i>
+   <span style="background-color:#CCFFFF">&nbsp;&nbsp;&nbsp;&nbsp;</span><i>&nbsp;Data&nbsp;&nbsp;</i>
+   <span style="background-color:#CCCCCC">&nbsp;&nbsp;&nbsp;&nbsp;</span><i>&nbsp;Checksum&nbsp;&nbsp;</i>
+ </p>
+
+   <p>File name:</p>
+   <p>File size:</p>
+
+</div>
+
+</body>
+
+<script src="file_hex_loader.js"></script>
+<script src="hex_uploader.js"></script>
+
+</html>
